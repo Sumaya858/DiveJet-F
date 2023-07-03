@@ -70,6 +70,7 @@ export default function App(){
           <nav>
             <div>
               <Link to="/signup">Signup</Link> &nbsp;
+              <Link to="/signup">Signup</Link> &nbsp;
               <Link to="/signin">Signin</Link> &nbsp;
               <Link to="/logout"onClick={logoutHandler}>Logout</Link> 
             </div>
