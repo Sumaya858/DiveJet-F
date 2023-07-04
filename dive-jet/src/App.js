@@ -7,10 +7,8 @@ import jwt_decode from 'jwt-decode'
 import Homepage from './components/homepage/Homepage'
 import About from './components/about/About'
 import Profile from './components/profile/Profile'
-
 import Contact from './components/contact/Contact'
-import './CSS/homepage.css'
-import './CSS/about.css'
+
 
 export default function App(){
 
@@ -92,7 +90,6 @@ export default function App(){
             <Route path="/signup" element={ <Signup register={registerHandler}></Signup> }></Route>
             <Route path="/signin" element={<Signin login={loginHandler}></Signin>}></Route>
             
-            <Route path="/about" element={<About />}></Route>
             <Route path="contact" element={<Contact />}></Route>
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/about" element={<About />}></Route>
