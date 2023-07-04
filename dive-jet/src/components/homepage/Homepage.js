@@ -37,7 +37,7 @@ export default function Homepage() {
 
         <div className='divingTitle'>
           <h2>Join Our Group Diving</h2> <br></br>
-          <h5>We welcome anyone who likes to dive with us, talk diving, and join us for fun dives ...</h5>
+          <h5>We welcome anyone who likes to dive with us, talk diving, and join us for fun dives . . .</h5>
         </div>
         <div className='g1'>
         <img className='pics1' src="https://images.unsplash.com/photo-1517627043994-b991abb62fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=417&q=80" alt="scuba-diver" />

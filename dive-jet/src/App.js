@@ -6,6 +6,7 @@ import { useEffect , useState } from 'react'
 import jwt_decode from 'jwt-decode'
 import Homepage from './components/homepage/Homepage'
 import About from './components/about/About'
+import Profile from './components/profile/Profile'
 
 export default function App(){
 
@@ -86,6 +87,7 @@ export default function App(){
             <Route path="/signin" element={<Signin login={loginHandler}></Signin>}></Route>
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/profile" element={<Profile />}></Route>
           </Routes>
 
           <footer>

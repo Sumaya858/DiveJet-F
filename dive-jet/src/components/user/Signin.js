@@ -69,8 +69,6 @@ export default function Signin(props) {
 
   return (
     <MDBContainer fluid>
-        <br></br>
-        <br></br>
 
       <MDBCard className='text-black m-5' style={{borderRadius: '25px'}}>
         <MDBCardBody>
@@ -79,12 +77,14 @@ export default function Signin(props) {
 
               <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign in</p>
 
-              <div className="d-flex flex-row align-items-center mb-4">
-                <MDBInput label='Your Email' id='form2' type='email' name="emailAddress" onChange={changeHandler}/>
+              <div className="d-flex flex-row align-items-center mb-4" >
+                <p>Your Email</p>&nbsp;&nbsp;&nbsp;
+                <MDBInput id='form2' type='email' name="emailAddress" onChange={changeHandler}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4">
-                <MDBInput label='Password' id='form3' name="password" type="password" onChange={changeHandler}/>
+              <p>Password</p>&nbsp;&nbsp;&nbsp;
+                <MDBInput id='form3' name="password" type="password" onChange={changeHandler}/>
               </div>
 
               <MDBBtn className='mb-4' size='lg'  onClick={loginHandler} >Log in</MDBBtn>
@@ -92,10 +92,8 @@ export default function Signin(props) {
             </MDBCol>
 
             <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
-              {/* <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid/> */}
               {/* <MDBCardImage src='https://i.pinimg.com/originals/30/48/58/30485866edfa12067101718b823fd37e.gif' fluid/> */}
               {/* <MDBCardImage src='https://i.pinimg.com/originals/fe/4b/c3/fe4bc367c796f800a0897599c2ba2022.gif' fluid/> */}
-              {/* <MDBCardImage src='https://i.pinimg.com/originals/12/4e/40/124e4014582b4dc62dd3bc8547d21659.gif' fluid/> */}
               <MDBCardImage src='https://gifdb.com/images/high/ponyo-and-sosuke-underwater-d0z30es7jdmzyd5m.gif' fluid/>
             </MDBCol>
 

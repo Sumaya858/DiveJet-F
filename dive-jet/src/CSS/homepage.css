@@ -16,10 +16,9 @@
 /* The navigation bar */
 .nav {
     overflow: hidden;
-    background: rgba(0, 40, 201,0.2);
-    position: fixed; /* Set the nav to fixed position */
-    top: 0; /* Position the nav at the top of the page */
-    width: 100%; /* Full width */
+    background-image: url('./nav1.jpg');
+    height: 86px;
+    position: relative;
     z-index: 10;
   }
   
@@ -41,7 +40,6 @@
     list-style-type: none;
     text-decoration: none;
     color: white;
-    position: absolute;
 
   }
 
@@ -60,7 +58,7 @@
 
 video{
     width: 100%;
-    height: 700px;
+    height: 600px;
     object-fit: cover;
 }
 
@@ -80,7 +78,7 @@ video{
     top: 0;
     left: 0;
     width: 100%;
-    height: 700px;
+    height: 689px;
     background-color: rgba(0,0,0,0.2);
 }
 
@@ -142,11 +140,11 @@ video{
 }
 
 .part2{
-    height: 3900px;
+    height: 3980px;
     /* background-image: url('https://i.pinimg.com/originals/44/db/93/44db938c4d86a7ea3ae51a511304a117.gif'); */
     /* background-image: url('https://w0.peakpx.com/wallpaper/231/537/HD-wallpaper-rumination-dj-dj-set-dj-visuals-erica-anderson-gif-gifs-vj-vj-clip-vj-clips-vj-loop-abstract-abstract-art-animated-art-animation-art-concert-visuals-digital-art-ericaofanderson-live.jpg'); */
     /* background-image: url('https://w0.peakpx.com/wallpaper/489/589/HD-wallpaper-stockpile-of-memories-dj-dj-set-dj-visuals-erica-anderson-gif-gifs-vj-vj-clip-vj-clips-vj-loop-abstract-abstract-art-animated-art-animation-art-concert-visuals-digital-art-ericaofanderson.jpg'); */
-    background-image: url('./1222.jpg');
+    background-image: url('./12221.jpg');
     background-color: rgb(22, 21, 21);
     background-repeat: no-repeat;
     background-position: center;
@@ -183,7 +181,7 @@ video{
 
 
 .divingTitle{
-    margin-top: -45px;
+    margin-top: -1px;
     text-align: center;
     color: rgb(0, 30, 148);
 }
@@ -200,7 +198,7 @@ video{
     display: inline-block;
     width: 400px;
     height: 700px;
-    margin: 10px 50px 0 50px;
+    margin: 50px 50px 0 50px;
     color: rgb(254, 254, 254);
     border-style: solid;
     border-color: rgb(0, 40, 201); 
@@ -223,6 +221,7 @@ footer{
     height: 150px;
     background-color: rgb(3, 0, 47);
     padding-top: 45px;
+    margin-top: -13px;
 }
 
 .logoFooter{

@@ -79,8 +79,7 @@ export default function Signup(props) {
 
   return (
     <MDBContainer fluid>
-        <br></br>
-        <br></br>
+
 
       <MDBCard className='text-black m-5' style={{borderRadius: '25px'}}>
         <MDBCardBody>
@@ -90,23 +89,27 @@ export default function Signup(props) {
               <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
 
               <div className="d-flex flex-row align-items-center mb-4 ">
+              <p>First Name</p>&nbsp;&nbsp;&nbsp;
                 {/* <MDBIcon fas icon="user me-3" size='lg'/> */}
-                <MDBInput label='First Name' id='form1' type='text' className='w-100' name="firstName" onChange={changeHandler} />
+                <MDBInput id='form1' type='text' className='w-100' name="firstName" onChange={changeHandler} />
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4 ">
+                <p>Last Name</p>&nbsp;&nbsp;&nbsp;
                 {/* <MDBIcon fas icon="user me-3" size='lg'/> */}
-                <MDBInput label='Last Name' id='form1' type='text' className='w-100' name="lastName" onChange={changeHandler}/>
+                <MDBInput id='form1' type='text' className='w-100' name="lastName" onChange={changeHandler}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4">
+                <p>Your Email </p>&nbsp;&nbsp;&nbsp;
                 {/* <MDBIcon fas icon="envelope me-3" size='lg'/> */}
-                <MDBInput label='Your Email' id='form2' type='email' name="emailAddress" onChange={changeHandler}/>
+                <MDBInput id='form2' type='email' name="emailAddress" onChange={changeHandler}/>
               </div>
 
               <div className="d-flex flex-row align-items-center mb-4">
+                <p>Password</p>&nbsp;&nbsp;&nbsp;
                 {/* <MDBIcon fas icon="lock me-3" size='lg'/> */}
-                <MDBInput label='Password' id='form3' name="password" type="password" onChange={changeHandler}/>
+                <MDBInput id='form3' name="password" type="password" onChange={changeHandler}/>
               </div>
 {/* 
               <div className='mb-4'>
@@ -118,8 +121,8 @@ export default function Signup(props) {
             </MDBCol>
 
             <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
-              <MDBCardImage src='https://media.tenor.com/S3jQ2lRCxmsAAAAC/ghibli-ponyo.gif' fluid/>
-              {/* <MDBCardImage src='https://media.tenor.com/G_Kymcvj-4UAAAAi/best-friends-forever-scuba.gif' fluid/> */}
+              {/* <MDBCardImage src='https://media.tenor.com/S3jQ2lRCxmsAAAAC/ghibli-ponyo.gif' fluid/> */}
+              <MDBCardImage src='https://media.tenor.com/G_Kymcvj-4UAAAAi/best-friends-forever-scuba.gif' fluid/>
               {/* <MDBCardImage src='https://media.tenor.com/rizoKCSZ98cAAAAd/helpmepls-kuchnahiaatahelp.gif' fluid/> */}
             </MDBCol>
 
