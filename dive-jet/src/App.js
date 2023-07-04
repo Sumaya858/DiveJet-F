@@ -73,9 +73,11 @@ export default function App(){
             <ul className='ulNav'>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">about</Link></li>
+
               <li><Link to="/signup">Signup</Link></li>
-              <li><Link to="/signin">Signin</Link></li>
-              <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li> 
+              <li><Link to="/signin">Signin</Link></li> 
+              
+              <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li>
             </ul>
           </nav>
           
