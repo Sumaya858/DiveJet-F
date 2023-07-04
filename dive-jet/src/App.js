@@ -48,7 +48,7 @@ export default function App(){
         let user = jwt_decode(token)
         setIsAuth(true)
         setUser(user)
-        return <Navigate to='/books' />
+        // return <Navigate to='/books' />
       } 
     }) 
     .catch(err => {
