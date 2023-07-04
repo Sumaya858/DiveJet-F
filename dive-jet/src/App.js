@@ -6,6 +6,7 @@ import { useEffect , useState } from 'react'
 import jwt_decode from 'jwt-decode'
 import Homepage from './components/homepage/Homepage'
 import About from './components/about/About'
+
 import Contact from './components/contact/Contact'
 import './CSS/homepage.css'
 import './CSS/about.css'
@@ -51,7 +52,7 @@ export default function App(){
         let user = jwt_decode(token)
         setIsAuth(true)
         setUser(user)
-        return <Navigate to='/books' />
+        // return <Navigate to='/books' />
       } 
     }) 
     .catch(err => {
@@ -73,13 +74,16 @@ export default function App(){
         <Router>
           <nav className='nav'>
             <h3 className='logo'>Dive 🤿 Jet</h3> 
-            <ul>
+            <ul className='ulNav'>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">about</Link></li>
+
               <li><Link to="/contact">contact</Link></li>
+
               <li><Link to="/signup">Signup</Link></li>
-              <li><Link to="/signin">Signin</Link></li>
-              <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li> 
+              <li><Link to="/signin">Signin</Link></li> 
+              
+              <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li>
             </ul>
           </nav>
           
@@ -90,7 +94,26 @@ export default function App(){
             <Route path="/about" element={<About />}></Route>
             <Route path="contact" element={<Contact />}></Route>
             <Route path="/" element={<Homepage />}></Route>
+            <Route path="/about" element={<About />}></Route>
           </Routes>
+
+          <footer>
+          <div>
+            <h3 className='logoFooter'>Dive 🤿 Jet</h3> 
+            <div className='contact'>
+              <h6>PHONE : +97317558899 </h6>
+              <h6>Email : info@divejet.com</h6>
+              <h6>Location : Building 1306, 346 Rd 4625, Manama</h6>
+            </div>
+            <div className='quick'>
+              <h6>QUICK LINKS</h6>
+              <h6 className='links'><Link to="/">Home</Link> <br></br>
+               <Link to="/about">about</Link><br></br>
+               <Link to="/signup">Signup</Link></h6>
+              
+            </div>
+          </div>
+        </footer>
         </Router>
     </>
   
