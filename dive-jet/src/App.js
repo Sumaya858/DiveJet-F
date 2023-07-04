@@ -7,6 +7,10 @@ import jwt_decode from 'jwt-decode'
 import Homepage from './components/homepage/Homepage'
 import About from './components/about/About'
 
+import Contact from './components/contact/Contact'
+import './CSS/homepage.css'
+import './CSS/about.css'
+
 export default function App(){
 
   const [isAuth, setIsAuth] = useState(false);    // check if the user is authenticated or not (logged in or not)
@@ -74,6 +78,8 @@ export default function App(){
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">about</Link></li>
 
+              <li><Link to="/contact">contact</Link></li>
+
               <li><Link to="/signup">Signup</Link></li>
               <li><Link to="/signin">Signin</Link></li> 
               
@@ -84,6 +90,9 @@ export default function App(){
           <Routes>
             <Route path="/signup" element={ <Signup register={registerHandler}></Signup> }></Route>
             <Route path="/signin" element={<Signin login={loginHandler}></Signin>}></Route>
+            
+            <Route path="/about" element={<About />}></Route>
+            <Route path="contact" element={<Contact />}></Route>
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/about" element={<About />}></Route>
           </Routes>
