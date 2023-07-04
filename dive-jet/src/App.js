@@ -5,7 +5,10 @@ import axios from 'axios'
 import { useEffect , useState } from 'react'
 import jwt_decode from 'jwt-decode'
 import Homepage from './components/homepage/Homepage'
+import Items from './components/items/Items'
 import './CSS/homepage.css'
+import './CSS/items.css'
+
 
 export default function App(){
 
@@ -72,7 +75,8 @@ export default function App(){
             <h3 className='logo'>Dive 🤿 Jet</h3> 
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">about</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/rent-item">Rent Items</Link></li>
               <li><Link to="/signup">Signup</Link></li>
               <li><Link to="/signin">Signin</Link></li>
               <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li> 
@@ -83,6 +87,7 @@ export default function App(){
             <Route path="/signup" element={ <Signup register={registerHandler}></Signup> }></Route>
             <Route path="/signin" element={<Signin login={loginHandler}></Signin>}></Route>
             <Route path="/" element={<Homepage />}></Route>
+            <Route path="/rent-item" element={<Items />}></Route>
           </Routes>
         </Router>
     </>
