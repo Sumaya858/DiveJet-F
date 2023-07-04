@@ -1,0 +1,125 @@
+.about {
+    background-image: url('./seashells.jpg')
+}
+
+.prg {
+
+    align-items: center;
+    margin-left:  550px; 
+    font-size: large;
+    font-family: 'Comic Neue', cursive;
+    
+    
+}
+
+h1 {
+    align-items: center;
+    margin-left: 650px;
+    font-family: "Audiowide", sans-serif;
+    color: rgb(160, 160, 205);
+   
+}
+
+.Coaches {
+    
+    align-items: center;
+    margin-left: 20px; 
+    margin-top: 20px;
+    font-size: large;
+    font-family: 'Comic Neue', cursive;
+
+}
+
+.T1 {
+
+    border-style: solid;
+    margin-left: 300px;
+    margin-top: 20px;
+    height: 500px;
+    width: 1200px;
+    text-align: center;
+    
+}
+
+
+
+p {
+   margin-left: 10px;
+}
+
+.A {
+    border-radius: 80px;
+    margin-left: 10px;
+}
+
+
+
+.Coaches3 {
+    margin-left: 100px;
+}
+
+.I {
+    margin-left: 100px;
+}
+
+.M {
+    border-radius: 80px;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+
+}
+
+.thirdly {
+    margin-left: 100px; 
+}
+
+.Coaches2 {
+    margin-left: 70px;
+}
+
+.N {
+    border-radius: 80px;
+    width: 200px;
+    height: 300px;
+    margin-left: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.S {
+    margin-left: 100px;
+}
+
+
+.T2 {
+    border-style: solid;
+    margin-left: 300px;
+    margin-top: 20px;
+    height: 500px;
+    width: 1200px;
+    text-align: center;
+    
+}
+
+
+.secondly {
+    margin-left: 70px;
+}
+
+.firstly {
+    margin-left: 20px;
+}
+
+.T3 {
+    border-style: solid;
+    margin-left: 300px;
+    margin-top: 30px;
+    height: 420px;
+    width: 1200px;
+    text-align: center;
+}
+
+.c3{
+    margin-left: -10px;
+}
