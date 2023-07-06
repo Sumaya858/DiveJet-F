@@ -1,39 +1,20 @@
 import React, { useEffect, useState } from "react";
-import axios, { all } from "axios";
+import Product from "./Product";
 
-function Items() {
+function Items(props) {
     // return <h1>This is the item rental page</h1>
 
-    const [items, setItems] = useState([])
-
-    useEffect(() => {
-        getAllItems()
-    }, [])
-
-    const getAllItems = async () => {
-        const res = await axios.get('rent-item')
-        console.log(res)
-        setItems(res.data)
-    }
-
-    const allItems = items.map(item => {
-        return (
-            <div className="itemContainer" key={item._id}>
-                <div className="itemListing">
-                    <img className="itemImage" src={item.itemImage} />&nbsp;
-                    <div className="name-price">
-                        <h5 className="itemName">{item.itemName}</h5>&nbsp;
-                        <h5 className="itemPrice">{item.itemPrice}</h5>&nbsp;
-                    </div>
-                    <button className="addItemBtn">Add to Cart</button>
-                </div>
-            </div>
-        )
-    })
+    const { products, onAdd } = props;
 
     return (
         <div>
-            {allItems}
+            <div className="emptyTop"></div>
+            <h2 className="cartpage">Products</h2>
+            <div>
+                {products.map((product) => (
+                    <Product key={product._id} product={product} onAdd={onAdd}></Product>
+                ))}
+            </div>
         </div>
     )
 }
