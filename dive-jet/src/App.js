@@ -20,13 +20,18 @@ export default function App() {
   // const [items] = useState([])
   const { products } = data;
   const [cartItems, setCartItems] = useState([])
+  const [countCartItems, setCountCartItems] = useState(0)
 
+  // let countCartItems = 0
 
   const onAdd = (product) => {
     console.log("id is", product._id)
     console.log('cartitems', cartItems[0])
     const exist = cartItems.find(x => x._id === product._id)
     console.log('exist', exist)
+    setCountCartItems (countCartItems +1)
+
+    console.log(countCartItems)
     if (exist && Object.keys(exist).length) {
       console.log("existing:")
       setCartItems(
@@ -45,6 +50,9 @@ export default function App() {
 
   const onRemove = (product) => {
     console.log(product._id)
+    setCountCartItems (countCartItems - 1)
+
+    console.log(countCartItems)
 
     const exist = cartItems.find(x => x._id === product._id)
     if (exist.qty === 1) {
@@ -128,7 +136,7 @@ export default function App() {
 
             <li><Link to="/signup">Signup</Link></li>
             <li><Link to="/signin">Signin</Link></li>
-            <li><Link to="/cart" > <Counter const countCartItems={cartItems.length}></Counter>   </Link></li>
+            <li><Link to="/cart" > <Counter const countCartItems={countCartItems}></Counter>   </Link></li>
 
             <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li>
           </ul>
