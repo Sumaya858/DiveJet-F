@@ -81,6 +81,7 @@ function Cart(props) {
                                         <MDBModalTitle>Success! 🎉 Your order is being processed.</MDBModalTitle>
                                         <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
                                     </MDBModalHeader>
+                                    <MDBModalBody>*NOTE: Please make sure you have proof of a valid diving license at the time of receiving your rental equipment.*</MDBModalBody>
                                     <MDBModalFooter>
                                         <img className="popupImg" src="https://media.giphy.com/media/Ri1VEmOzeIyRXDEFpM/giphy.gif" />
                                     </MDBModalFooter>
