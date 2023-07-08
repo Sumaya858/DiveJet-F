@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 200px; */
+    background-color: rgb(9, 38, 67);
+    background-image: -moz-radial-gradient(top, rgb(75, 82, 161), rgb(26, 26, 112), rgb(8, 8, 56));
+    background-image: -webkit-radial-gradient(top, rgb(75, 82, 161), rgb(26, 26, 112), rgb(8, 8, 56));
+}
+
+.emptyTop {
+    margin-top: 200px;
+    ;
+}
+
+.itemContainer {
+    margin-top: 100px;
+    display: inline-flex;
+    /* flex-direction: row; */
+    margin: 30px 50px;
+    /* background-color: rgb(9, 38, 67);
+     background-image: -moz-linear-gradient(rgb(151, 151, 195), rgb(41, 41, 144), rgb(8, 8, 56));
+    background-image: -webkit-linear-gradient(rgb(151, 151, 195), rgb(41, 41, 144), rgb(8, 8, 56));  */
+    background-color: rgba(235, 239, 243, 0.756);
+    height: 350px;
+    width: 300px;
+    padding: 50px;
+    border-radius: 35px;
+    position: relative;
+    z-index: 1;
+    /* color: white; */
+    border: 1px solid rgb(10, 10, 69);
+
+}
+
+.itemImage {
+    display: flex;
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid rgb(10, 10, 69);
+
+}
+
+/* .itemListing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+} */
+
+.name-price {
+    display: flex;
+    flex-direction: row;
+}
+
+.addItemBtn {
+    background-color: rgb(10, 10, 69);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 200px;
+    border: none;
+}
+
+.addItemBtn:hover {
+    background: rgb(49, 49, 174);
+    background-image: -moz-radial-gradient(top, rgb(75, 82, 161), rgb(49, 49, 174), rgb(12, 12, 125));
+    background-image: -webkit-radial-gradient(top, rgb(75, 82, 161), rgb(49, 49, 174), rgb(12, 12, 125));
+}
+
+.itemName {
+    width: 120px
+}
+
+.cartpage {
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+}
+
+.cartCard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+}
+
+.cartCard-Ship {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.cartCard-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+h2.cartpage, h5.cartpage,
+.cartpage .emptyCart {
+    color: white;
+}
+
+/* come back to this later */
+
+
+
+button.add {
+    background-color: rgb(57, 168, 131);
+    width: 25px;
+    border: 1px solid rgb(3, 3, 28);
+    border-radius: 5px;
+
+}
+
+button.remove {
+    background-color: rgb(209, 69, 69);
+    width: 25px;
+    border: 1px solid rgb(3, 3, 28);
+    border-radius: 5px;
+
+}
+
+
+
+.checkoutBtn {
+    background-color: rgb(102, 187, 226);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.checkoutBtn:hover {
+    background-color: rgb(64, 134, 166);
+}
+
+.popupImg {
+    display: flex;
+    margin: 0 auto;
+    width: 450px;
+    padding: 20px;
+}
+
+.counter a{
+    display: flex;
+    flex-direction: row;
+}
+
+button.badge {
+    background-color: rgb(209, 69, 69);
+    border: none;
+    color: white;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+}
