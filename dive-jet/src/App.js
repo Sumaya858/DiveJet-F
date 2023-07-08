@@ -12,8 +12,12 @@ import About from './components/about/About'
 import './CSS/items.css'
 import data from './data'
 
+import Contact from './components/contact/Contact'
+import './CSS/homepage.css'
+import './CSS/about.css'
 
-export default function App() {
+export default function App(){
+
 
   const [isAuth, setIsAuth] = useState(false);    // check if the user is authenticated or not (logged in or not)
   const [user, setUser] = useState({}); // Contain User, if any.
@@ -133,7 +137,7 @@ export default function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/rent-item">Rent Items</Link></li>
-
+            <li><Link to="/contact">contact</Link></li>
             <li><Link to="/signup">Signup</Link></li>
             <li><Link to="/signin">Signin</Link></li>
             <li><Link to="/cart" > <Counter const countCartItems={countCartItems}></Counter>   </Link></li>
@@ -149,9 +153,11 @@ export default function App() {
           <Route path="/rent-item" element={<Items products={products} onAdd={onAdd} />}></Route>
           <Route path="/cart" element={<Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="contact" element={<Contact />}></Route>
         </Routes>
 
         <footer>
+
           <div>
             <h3 className='logoFooter'>Dive 🤿 Jet</h3>
             <div className='contact'>
