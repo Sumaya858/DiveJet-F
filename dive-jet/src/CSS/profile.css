@@ -8,3 +8,22 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right bottom, rgba(101, 236, 246), rgba(114, 99, 247))
   }
+
+  .course{
+    display: flex;
+  }
+
+  .courseDetails{
+    /* padding: 30px; */
+    margin-left: 70px;
+  }
+
+  .del{
+    margin-left: 500px;
+    background-color: rgb(0, 109, 251);
+    color: white;
+  }
+
+  .del:hover{
+    background-color: red;
+  }

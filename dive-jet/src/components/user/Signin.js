@@ -70,7 +70,7 @@ export default function Signin(props) {
   return (
     <MDBContainer fluid>
 
-      <MDBCard className='text-black m-5' style={{borderRadius: '25px'}}>
+      <MDBCard className='text-black m-5 center' style={{borderRadius: '25px'}}>
         <MDBCardBody>
           <MDBRow>
             <MDBCol md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
@@ -95,6 +95,7 @@ export default function Signin(props) {
               {/* <MDBCardImage src='https://i.pinimg.com/originals/30/48/58/30485866edfa12067101718b823fd37e.gif' fluid/> */}
               {/* <MDBCardImage src='https://i.pinimg.com/originals/fe/4b/c3/fe4bc367c796f800a0897599c2ba2022.gif' fluid/> */}
               <MDBCardImage src='https://gifdb.com/images/high/ponyo-and-sosuke-underwater-d0z30es7jdmzyd5m.gif' fluid/>
+              {/* <MDBCardImage src='https://kornati-diving.com/wp-content/uploads/2023/03/diver-anim-1.gif'  style={{ width: '400px' }} fluid/> */}
             </MDBCol>
 
           </MDBRow>

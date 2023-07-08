@@ -1,4 +1,4 @@
-import{BrowserRouter as Router, Routes, Route, Link, Navigate} from 'react-router-dom'
+import{BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Signup from './components/user/Signup'
 import Signin from './components/user/Signin'
 import axios from 'axios'
@@ -8,7 +8,8 @@ import Homepage from './components/homepage/Homepage'
 import About from './components/about/About'
 import Profile from './components/profile/Profile'
 import Contact from './components/contact/Contact'
-
+import Courses from './components/course/Courses'
+import logo from './divejet.png'
 
 export default function App(){
 
@@ -31,12 +32,14 @@ export default function App(){
   
 
   const registerHandler = (user) => {
+    console.log("user::::", user)
     axios.post("auth/signup", user) //user here will contain json object
     .then(res => {
       console.log(res)
     }) 
     .catch(err => {
       console.log(err)
+      console.log(err.message)
     })
   }
 
@@ -72,17 +75,16 @@ export default function App(){
     
         <Router>
           <nav className='nav'>
-            <h3 className='logo'>Dive 🤿 Jet</h3> 
+            {/* <h3 className='logo'>Dive 🤿 Jet</h3>  */}
+            <img className='logo' src={logo} alt="r" />
             <ul className='ulNav'>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">about</Link></li>
-
-              <li><Link to="/contact">contact</Link></li>
-
-              <li><Link to="/signup">Signup</Link></li>
-              <li><Link to="/signin">Signin</Link></li> 
-              
-              <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/courses">Courses</Link></li>
+              <li><Link to="/product">Products</Link></li>
+              <li>{isAuth? <Link to ="/profile">Profile</Link> : <Link to="/signup">Signup</Link>}</li>
+              <li>{isAuth? <Link to="/logout" onClick={logoutHandler}>Logout</Link> : <Link to="/signin">Signin</Link>}</li> 
+              <li></li>
             </ul>
           </nav>
           
@@ -94,11 +96,14 @@ export default function App(){
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="/courses" element={<Courses />}></Route>
           </Routes>
 
           <footer>
           <div>
-            <h3 className='logoFooter'>Dive 🤿 Jet</h3> 
+            {/* <h3 className='logoFooter'>Dive 🤿 Jet</h3> */}
+            <img className='logoFooter' src={logo} alt="r" />
+
             <div className='contact'>
               <h6>PHONE : +97317558899 </h6>
               <h6>Email : info@divejet.com</h6>
@@ -108,7 +113,7 @@ export default function App(){
               <h6>QUICK LINKS</h6>
               <h6 className='links'><Link to="/">Home</Link> <br></br>
                <Link to="/about">about</Link><br></br>
-               <Link to="/signup">Signup</Link></h6>
+               <Link to="/contact">Contact us</Link></h6>
               
             </div>
           </div>
