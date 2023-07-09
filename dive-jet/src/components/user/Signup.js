@@ -1,20 +1,11 @@
+import {useNavigate} from 'react-router-dom';
 import React, { useState } from 'react';
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBInput,
-  // MDBIcon,
-  // MDBCheckbox
-}
-from 'mdb-react-ui-kit';
+import {MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardImage, MDBInput} from 'mdb-react-ui-kit';
 
 export default function Signup(props) {
-        const [newUser, setNewUser] = useState({}); 
+    const [newUser, setNewUser] = useState({}); 
+    const navigate = useNavigate();
+
 
     const changeHandler = (e) => { 
         const user = {...newUser}; 
@@ -25,6 +16,7 @@ export default function Signup(props) {
 
     const registerHandler = () => {
         props.register(newUser)
+        navigate('/signin')
     }
 
 

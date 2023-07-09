@@ -1,7 +1,14 @@
 .courseback{
   height: 1000px;
+  background-image: url('./course.jpg');
 }
 
+.courseicon{
+  position: absolute;
+  height: 180px;
+  margin-left: 1300px;
+  margin-top: -160px;
+}
 
 .container1 {
     margin-top: 5em;
@@ -27,7 +34,7 @@
   }
   
   .card1 {
-    height: 600px;
+    height: 650px;
     flex: 1;
     flex-wrap: wrap;
     max-width: 390px;
@@ -35,6 +42,7 @@
     border-radius: 2%;
     margin-right: 0em;
     margin-left: 3em;
+    background-color: white;
     box-shadow: 3px 3px 25px 0px rgba(46,61,73,0.5);
     opacity: .9;
     transition: all .3s ease-in-out;
@@ -65,6 +73,10 @@
 
   }
 
+  .p1{
+    /* margin-left: 80px; */
+    text-align: center;
+  }
 
   .joinb{
     width: 100px;
@@ -81,4 +93,24 @@
   
   .test{
     display: flex; 
+  }
+
+  .scubaCourses{
+    text-align: center;
+    /* margin-top: 60px; */
+    margin-bottom: 20px;
+    color: rgb(0, 0, 109);
+  }
+
+  .aboutScubaCourses{
+    text-align: center;
+    padding: 0px 250px;
+    font-size: large;
+
+  }
+
+  p a{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(0, 0, 109);
   }

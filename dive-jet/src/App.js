@@ -1,4 +1,4 @@
-import{BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import{BrowserRouter as Router, Routes, Route, Link, Navigate} from 'react-router-dom'
 import Signup from './components/user/Signup'
 import Signin from './components/user/Signin'
 import axios from 'axios'
@@ -142,18 +142,16 @@ export default function App(){
             <li><Link to="/about">About</Link></li>
             <li><Link to="/courses">Courses</Link></li>
             <li><Link to="/rent-item">Products</Link></li>
-            <li><Link to="/contact">contact</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
             <li>{isAuth? <Link to ="/profile">Profile</Link> : <Link to="/signup">Signup</Link>}</li>
             <li>{isAuth? <Link to="/logout" onClick={logoutHandler}>Logout</Link> : <Link to="/signin">Signin</Link>}</li> 
-            <li><Link to="/cart" > <Counter const countCartItems={countCartItems}></Counter>   </Link></li>
-
-            <li><Link to="/logout" onClick={logoutHandler}>Logout</Link></li>
+            <li className='carttt'><Link to="/cart" > <Counter const countCartItems={countCartItems}></Counter>   </Link></li>
           </ul>
         </nav>
 
         <Routes>
           <Route path="/signup" element={<Signup register={registerHandler}></Signup>}></Route>
-          <Route path="/signin" element={<Signin login={loginHandler}></Signin>}></Route>
+          <Route path="/signin" element={isAuth ? <Navigate to='/' /> : <Signin login={loginHandler}></Signin>}></Route>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/rent-item" element={<Items products={products} onAdd={onAdd} />}></Route>
           <Route path="/cart" element={<Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />}></Route>

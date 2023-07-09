@@ -6,6 +6,7 @@ import './CSS/profile.css'
 import './CSS/homepage.css'
 import './CSS/about.css'
 import './CSS/courses.css'
+import './CSS/contact.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

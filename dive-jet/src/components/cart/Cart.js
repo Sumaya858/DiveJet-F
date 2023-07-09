@@ -24,10 +24,10 @@ function Cart(props) {
 
     return (
         <>
-            <div className="emptyTop"></div>
+            {/* <div className="emptyTop"></div> */}
             <h2 className="cartpage">Your Cart</h2>
             <div className="cartCard">
-                <div>  {cartItems.length === 0 && <div className="emptyCart">Cart Is Empty</div>}</div>
+                <div>  {cartItems.length === 0 && <div className="emptyCart" style={{textAlign : "center", marginTop:'208px' ,marginBottom:'200px'}}>Cart Is Empty</div>}</div>
                 {cartItems.map((item) => (
                     <div className="cartCard-item" key={item._id}>
 
