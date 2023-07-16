@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -100,4 +101,6 @@ export default function contact1() {
       <br/>
     </div>
   );
+  )
+
 }
