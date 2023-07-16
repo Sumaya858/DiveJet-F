@@ -1,125 +1,82 @@
-.about {
-    background-image: url('./seashells.jpg')
+.container {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
 }
 
-.prg {
-
-    align-items: center;
-    margin-left:  550px; 
-    font-size: large;
-    font-family: 'Comic Neue', cursive;
-    
-    
+.header {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    align-items: center;
-    margin-left: 650px;
-    font-family: "Audiowide", sans-serif;
-    color: rgb(160, 160, 205);
-   
-}
-
-.Coaches {
-    
-    align-items: center;
-    margin-left: 20px; 
-    margin-top: 20px;
-    font-size: large;
-    font-family: 'Comic Neue', cursive;
+.header img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+  /* webkit-filter: hue-rotate(330deg); */
 
 }
 
-.T1 {
-
-    border-style: solid;
-    margin-left: 300px;
-    margin-top: 20px;
-    height: 500px;
-    width: 1200px;
-    text-align: center;
-    
+.card {
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 340px;
+  /* border-sizing: border-box; */
+  border-radius: 2%;
+  margin-right: 3em;
+  box-shadow: 3px 3px 25px 0px rgba(46,61,73,0.5);
+  opacity: .9;
+  transition: all .3s ease-in-out;
 }
 
-
-
-p {
-   margin-left: 10px;
+.card:hover {
+  cursor: pointer;
+  opacity: 1;
+  box-shadow: 1px 1px 25px 0px rgba(46,61,73,0.4);
 }
 
-.A {
-    border-radius: 80px;
-    margin-left: 10px;
+.card:last-child {
+  margin-right: 0;
 }
 
-
-
-.Coaches3 {
-    margin-left: 100px;
+.descr {
+  margin-top: 0;
+  padding: 1em 2em 0 2em;
+  color: #2e3d49;
 }
-
-.I {
-    margin-left: 100px;
+/* .75em */
+.descr p {
+  font-size:14px;
+  margin-top: 5.5em;
+  padding-bottom: 1em;
+  text-align: center;
 }
-
-.M {
-    border-radius: 80px;
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
+h5{
+  text-align:center;
+  margin: 0;
+}
+.about{
+  text-align: center;
+ 
+}
+h1{
+  text-align: center;
+  font-size: 30px;
 
 }
+/* mark{
+  background-color: rgb(76, 151, 248);
 
-.thirdly {
-    margin-left: 100px; 
-}
-
-.Coaches2 {
-    margin-left: 70px;
-}
-
-.N {
-    border-radius: 80px;
-    width: 200px;
-    height: 300px;
-    margin-left: 100px;
-    align-items: center;
-    text-align: center;
-}
-
-.S {
-    margin-left: 100px;
-}
-
-
-.T2 {
-    border-style: solid;
-    margin-left: 300px;
-    margin-top: 20px;
-    height: 500px;
-    width: 1200px;
-    text-align: center;
-    
-}
-
-
-.secondly {
-    margin-left: 70px;
-}
-
-.firstly {
-    margin-left: 20px;
-}
-
-.T3 {
-    border-style: solid;
-    margin-left: 300px;
-    margin-top: 30px;
-    height: 420px;
-    width: 1200px;
-    text-align: center;
-}
-
-.c3{
-    margin-left: -10px;
-}
+} */
+/* mark:hover{
+  background-color: whitesmoke;
+} */
+/* .titleabout{
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  margin-left: 500px;
+  border: 2px solid rgb(0, 16, 160);
+} */

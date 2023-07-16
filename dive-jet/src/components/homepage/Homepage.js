@@ -120,23 +120,27 @@ export default function Homepage(props) {
                           sodales taciti duis praesent id. Consequat urna vitae morbi nunc congue.
         </p>
         </div>
-        <div className='g1'>
-                <img className='pics1' src="https://images.unsplash.com/photo-1595323397978-65433d24fc23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="oxygen-tank" />
-                <p className='par'>Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius;
-                                  dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.
-                                  Hendrerit parturient habitant pharetra rutrum gravida porttitor eros feugiat. Mollis elit
-                                  sodales taciti duis praesent id. Consequat urna vitae morbi nunc congue.
-                </p>
-                </div>
-        {/* <script>{this.props.weather}</script> */}
+  <div className='g1'>
+        <img className='pics1' src="https://images.unsplash.com/photo-1595323397978-65433d24fc23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="oxygen-tank" />
+        <p className='par'>Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius;
+                          dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.
+                          Hendrerit parturient habitant pharetra rutrum gravida porttitor eros feugiat. Mollis elit
+                          sodales taciti duis praesent id. Consequat urna vitae morbi nunc congue.
+        </p>
+        </div>
+        <div className="weather-data">
+  <p className='description'>{weather.weather[0].description}</p>
+  <p className='temperature'>{Math.round(weather.main.temp)}&deg;C</p>
+  <div className='details'>
+    <p>Humidity</p>
+    <span>{weather.main.humidity}%</span>
+  </div>
+  <div className='details'>
+    <p>Wind Speed</p>
+    <span>{weather.wind.speed} m/s</span>
+  </div>
+</div>
 
-        <p className='description'>Today's Forecase is: {weather.weather[0].description}</p>
-        <p className='speed'>Wind speed is: {weather.wind.speed}</p>
-        <p className='feels'>Feels Like: {weather.main.feels_like}</p>
-        <p className='humidity'>Humidity: {weather.main.humidity}</p>
-
-
-        
 
 
       </div>
