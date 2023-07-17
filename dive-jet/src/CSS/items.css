@@ -1,22 +1,35 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
-    /* margin-top: 200px; */
     background-color: rgb(9, 38, 67);
     background-image: -moz-radial-gradient(top, rgb(75, 82, 161), rgb(26, 26, 112), rgb(8, 8, 56));
     background-image: -webkit-radial-gradient(top, rgb(75, 82, 161), rgb(26, 26, 112), rgb(8, 8, 56));
-}
+} */
 
-.emptyTop {
+/* .emptyTop {
     margin-top: 200px;
     ;
+} */
+
+.rentProduct{
+    /* background-image: url('./productbg.jpg'); */
+    background-image: url('./productbg1.jpg');
+    /* background-image: url('./pro2.jpg'); */
+    /* background-image: url('./pro3.jpg'); */
+}
+
+.itemicon{
+    position: absolute;
+    height: 250px;
+    margin-left: 1240px;
+    margin-top: -100px;
 }
 
 .itemContainer {
     margin-top: 100px;
     display: inline-flex;
     /* flex-direction: row; */
-    margin: 30px 50px;
+    margin: 30px 100px;
     /* background-color: rgb(9, 38, 67);
      background-image: -moz-linear-gradient(rgb(151, 151, 195), rgb(41, 41, 144), rgb(8, 8, 56));
     background-image: -webkit-linear-gradient(rgb(151, 151, 195), rgb(41, 41, 144), rgb(8, 8, 56));  */
@@ -72,8 +85,8 @@ body {
 }
 
 .cartpage {
-    /* color: white; */
     display: flex;
+    /* margin-top: 50px; */
     justify-content: center;
 }
 
@@ -109,7 +122,7 @@ body {
 
 h2.cartpage, h5.cartpage,
 .cartpage .emptyCart {
-    color: white;
+    color: rgb(0, 0, 94);
 }
 
 /* come back to this later */
@@ -140,8 +153,14 @@ button.remove {
     padding: 10px;
     border-radius: 15px;
     font-weight: bolder;
+    color: white;
 }
 
+.col-2{
+    width: 150px;
+    margin-right: 200px;
+    margin-left: 25px;
+}
 .checkoutBtn:hover {
     background-color: rgb(64, 134, 166);
 }
@@ -165,4 +184,12 @@ button.badge {
     width: 18px;
     height: 18px;
     padding: 0;
+}
+
+.carttt{
+    background-color: white;
+    height: 30px;
+    width: 50px;
+    padding: 4px 5px;
+    border-radius: 10px;
 }
