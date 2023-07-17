@@ -78,7 +78,7 @@ export default function Signup(props) {
                 <MDBInput id='form3' name="password" type="password" onChange={changeHandler}/>
               </div>
 
-              <MDBBtn className='mb-4' size='lg'  onClick={registerHandler} >Register</MDBBtn>
+              <button className="checkoutBtn"  onClick={registerHandler} >Register</button>
 
             </MDBCol>
 

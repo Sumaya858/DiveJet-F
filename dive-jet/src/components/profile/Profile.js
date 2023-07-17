@@ -18,7 +18,7 @@ export default function Profile() {
     const handleDelete = async (courseId) => {
       console.log(courseId)
       const response = await axios.post(`course/delete?id=${courseId}`)
-      getAllCourses();
+      await getAllCourses();
       // navigate('/profile')
       
     }
@@ -35,6 +35,7 @@ export default function Profile() {
     }
 
     const getAllCourses = async () => {
+      console.log("here")
         const response =  await axios.get('courses/index',
         {
             headers: {

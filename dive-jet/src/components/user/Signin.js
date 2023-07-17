@@ -42,7 +42,7 @@ export default function Signin(props) {
                 <MDBInput id='form3' name="password" type="password" onChange={changeHandler}/>
               </div>
 
-              <MDBBtn className='mb-4' size='lg'  onClick={loginHandler} >Log in</MDBBtn>
+              <button className="checkoutBtn"  onClick={loginHandler} >Log in</button>
 
             </MDBCol>
 

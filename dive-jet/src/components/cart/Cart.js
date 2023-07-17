@@ -12,7 +12,7 @@ import {
 } from 'mdb-react-ui-kit';
 
 function Cart(props) {
-    const { cartItems, onAdd, onRemove } = props
+    const { cartItems, onAdd, onRemove, handleClear } = props
 
     const [basicModal, setBasicModal] = useState(false);
     const toggleShow = () => setBasicModal(!basicModal);
@@ -64,7 +64,7 @@ function Cart(props) {
                             <strong>Total Price</strong>
                         </div>
                         <div className="col-1 text-right">
-                            <strong>${totalPrice}</strong>
+                            <strong>${totalPrice.toFixed(2)}</strong>
                         </div>
                     </div>
                     <hr />
@@ -73,13 +73,13 @@ function Cart(props) {
                         {/* <button className="checkoutBtn" onClick={() => alert('Order being processed!')}>
                             Checkout
                         </button> */}
-                        <MDBBtn className="checkoutBtn" onClick={toggleShow}>Checkout</MDBBtn>
+                        <button className="checkoutBtn" onClick={toggleShow}>Checkout</button>
                         <MDBModal show={basicModal} setShow={setBasicModal} tabIndex='-1'>
                             <MDBModalDialog centered>
                                 <MDBModalContent >
                                     <MDBModalHeader>
                                         <MDBModalTitle>Success! 🎉 Your order is being processed.</MDBModalTitle>
-                                        <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+                                        <MDBBtn className='btn-close' color='none' onClick={()=>{toggleShow(); handleClear();}}></MDBBtn>
                                     </MDBModalHeader>
                                     <MDBModalBody>*NOTE: Please make sure you have proof of a valid diving license at the time of receiving your rental equipment.*</MDBModalBody>
                                     <MDBModalFooter>

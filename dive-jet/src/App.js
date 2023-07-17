@@ -128,6 +128,11 @@ export default function App(){
     setUser(null)
   }
 
+  const handleClear = () => {
+    setCartItems([])
+    setCountCartItems(0)
+}
+
 
   return (
 
@@ -154,7 +159,7 @@ export default function App(){
           <Route path="/signin" element={isAuth ? <Navigate to='/' /> : <Signin login={loginHandler}></Signin>}></Route>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/rent-item" element={<Items products={products} onAdd={onAdd} />}></Route>
-          <Route path="/cart" element={<Cart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />}></Route>
+          <Route path="/cart" element={isAuth ? <Cart onAdd={onAdd} onRemove={onRemove} handleClear={handleClear} cartItems={cartItems} /> : <Signin login={loginHandler}></Signin>}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="contact" element={<Contact />}></Route>
           <Route path="/profile" element={<Profile />}></Route>

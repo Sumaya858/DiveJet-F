@@ -7,8 +7,10 @@ export default function Course() {
 
     const [message, setMessage] = useState ('')
     const [message2, setMessage2] = useState ('')
-    const [view, setView] = useState ('')
     const [message3, setMessage3] = useState ('')
+    const [view, setView] = useState ('')
+    const [view2, setView2] = useState ('')
+    const [view3, setView3] = useState ('')
 
 
     const handleBegSubmit = async (event) => {
@@ -30,7 +32,7 @@ export default function Course() {
     }
 
     const handleAdvSubmit = async (event) => {
-      event.preventDefault()
+      // event.preventDefault()
     
       const response = await axios.post('courses/add', {"level": "Advance"} ,{
         headers: {
@@ -41,6 +43,7 @@ export default function Course() {
     
       if (response.status === 201){
         setMessage2('Your Course Has Been Added ✔️')
+        setView2(<a href="/profile">View All My Courses</a>)
       } else {
         setMessage2('Something Went Wrong')
       }
@@ -58,27 +61,11 @@ export default function Course() {
     
       if (response.status === 201){
         setMessage3('Your Course Has Been Added ✔️')
+        setView3(<a href="/profile">View All My Courses</a>)
       } else {
         setMessage3('Something Went Wrong')
       }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -139,6 +126,7 @@ export default function Course() {
             </details>
           </div>
           <p className='p1'>{message2}</p>
+          <p className='p1 alink'>{view2}</p>
 
         </div>
 
@@ -154,6 +142,35 @@ export default function Course() {
             <div className='test'>
               <h2>Professional</h2>&nbsp; 
               <input className="joinb" type="submit" value="Join" onClick={handleProfSubmit} />
+
+
+
+{/* <button type="button" class="btn btn-primary joinb" data-toggle="modal" data-target="#exampleModalCenter" onClick={handleProfSubmit}>
+  Join
+</button>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Course Registration</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      Your Course Has Been Added Succesfully
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> */}
 
 
               {/* <input className="joinb btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" type="submit" value="Join" onClick={handleProfSubmit} />
@@ -189,6 +206,7 @@ export default function Course() {
             </details>
           </div>
           <p className='p1'>{message3}</p>
+          <p className='p1 alink'>{view3}</p>
 
         </div>
 

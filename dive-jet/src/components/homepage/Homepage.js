@@ -42,6 +42,8 @@ export default function Homepage() {
         <img className='second' src="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" />
         <img className='base' src="https://images.unsplash.com/photo-1580019542155-247062e19ce4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80" alt="" />
 
+        <h2 className='servicetitle'>Our services</h2>
+
         <div className='services'>
           {/* <a href="/courses"><img className='pics' src='https://divemagazine.com/wp-content/uploads/learning-to-dive-pool-training.jpg' alt="scuba-diver" /></a> */}
           {/* <a href="/courses"><img className='pics' src='https://www.tripsavvy.com/thmb/GiaEltqBKCTRFjUt2dlz3wsjIuM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-597572085-584819855f9b5851e593fd0b-5c336fd646e0fb0001d39014.jpg' alt="scuba-diver" /></a> */}
@@ -111,6 +113,8 @@ export default function Homepage() {
         </div>
         </div>
 
+        {/* <div className='mymap'><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe></div> */}
+        <div className='mymap'><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=26.2465946,%2050.6164127+(My%20Business%20Name)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
 
       </div>
     </div>
