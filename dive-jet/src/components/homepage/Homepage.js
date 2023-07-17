@@ -134,21 +134,6 @@ export default function Homepage() {
           </p>
 
         </div>
-        <div className="weather-data">
-  <p className='description'>{weather.weather[0].description}</p>
-  <p className='temperature'>{Math.round(weather.main.temp)}&deg;C</p>
-  <div className='details'>
-    <p>Humidity</p>
-    <span>{weather.main.humidity}%</span>
-  </div>
-  <div className='details'>
-    <p>Wind Speed</p>
-    <span>{weather.wind.speed} m/s</span>
-  </div>
-</div>
-
-
-
 
         <div className='bor'>
         <div className="weather-data">
