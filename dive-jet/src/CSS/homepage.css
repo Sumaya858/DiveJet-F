@@ -268,13 +268,14 @@ footer{
 }
 
 
-
+/* wethar */
 
 .weather-data {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     /* width: 580px; */
     width: 900px;
     height: 380px;
@@ -303,6 +304,7 @@ footer{
 
     margin: 0;
   }
+
   .weather-data .details {
     display: flex;
     justify-content: space-between;
@@ -311,6 +313,7 @@ footer{
     padding: 0 20px;
     margin-top: 20px;
   }
+
   .weather-data .details p {
     font-size: 18px;
     font-weight: bold;
@@ -353,4 +356,5 @@ footer{
        scrolling:"no";
         marginheight:"0";
          marginwidth:"0" */
+
   }
